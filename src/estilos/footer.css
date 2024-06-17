@@ -1,0 +1,313 @@
+/*contenedor principal*/
+.footer{
+    width: 100%;
+    min-height: 50svh;
+    display: flex;
+    flex-direction: column;
+    padding: 0 3rem;
+    padding-top: 5rem;
+    background-image: url("/f-footer.png");
+    background-position: center;
+    background-size: cover;
+    gap: 0.5rem;
+}
+
+/*contenedor de imagen*/
+.footer_logo{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 1rem ;
+}
+
+/*imagen logo*/
+.footer_logo img{
+    width: 400px;
+    height: auto;
+}
+
+/*contenedor principal medios de contacto*/
+.footer_contenedor-contacto{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+}
+
+/*contenedor teléfono e email*/
+.footer_telefono{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.footer_telefono div{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.footer_telefono div img{
+    width: 35px;
+    height: auto;
+}
+
+.footer_telefono div p{
+    font-family: var(--font-text);
+    font-size: 1rem;
+}
+
+/*dirección*/
+.footer_domicilio{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 1rem;
+}
+
+.footer_domicilio p{
+    font-family: var(--font-title);
+    font-family: var(--font-text);
+    font-size: 1rem;
+}
+
+.footer_domicilio img{
+    width: 35px;
+    height: auto;
+}
+
+
+/*contenedor redes sociales*/
+.footer_redes{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.footer_redes p{
+    font-family: var(--font-text);
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+/*contenedor de iconos redes sociales*/
+.footer_redes div{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.8rem;
+}
+
+.footer_redes div img{
+    width: 48px;
+}
+
+.footer_nav{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 1rem;
+}
+
+.footer_nav a{
+    font-family: var(--font-text);
+    font-size: 1.1rem;
+    text-decoration: none;
+    color: #fff;
+}
+
+.footer_nav a:hover{
+    transition: all ease-in-out 3ms;
+    color: var(--color-c);
+}
+
+.footer .linea{
+    background: var(--color-c);
+    height: 2px;
+    width: 100%;
+    margin-top: 2rem;
+}
+
+/*copyright*/
+.copy{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 2rem 0 ;
+    padding-bottom: 1rem;
+}
+
+.copy_contenedor{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.copy p{
+    font-family: var(--font-text);
+    font-size: 0.8rem;
+}
+
+
+/*link sunflower*/
+.copy p a{
+    font-family: var(--font-title);
+    font-size: 0.9rem;
+    font-weight: 900;
+    color: var(--color-c);
+    text-decoration: none;
+}
+
+/*diseño adaptable*/
+
+/*DESTOCKS*/
+@media only screen and (max-width:1440px){
+
+
+    /*imagen logo*/
+    .footer_logo img{
+        width: 350px;
+        height: auto;
+    }
+
+    /*contenedor teléfono e email*/
+    .footer_telefono div img{
+        width: 30px;
+        height: auto;
+    }
+
+    .footer_telefono div p{
+        font-size: 1rem;
+    }
+
+    /*contenedor de iconos redes sociales*/
+    .footer_redes p{
+        font-size: 1.1rem;
+    }
+
+    .footer_redes div img{
+        width: 40px;
+        height: auto;
+    }
+
+}
+
+/*NOTEBOOKS*/
+@media only screen and (max-width:1023px){
+
+    /*contenedor principal*/
+    .footer{
+        padding: 3rem 2rem;
+        padding-bottom: 1rem;
+    }
+
+    .footer_logo{
+        align-items: center;
+        justify-content: center;
+    }
+
+    .footer_logo img{
+        width: 400px;
+        height: auto;
+    }
+
+    /*contenedor principal medios de contacto*/
+    .footer_contenedor-contacto{
+        grid-template-columns: 1fr;
+        gap: 3rem;
+        align-items: center;
+        justify-items: center;
+        margin-top: 3rem;
+    }
+
+    .footer_telefono div{
+        align-items: center;
+        justify-content: center;
+    }
+
+    .footer_telefono div p{
+        font-size: 1.1rem;
+    }
+    
+
+    .footer_redes p{
+        font-size: 1.5rem;
+    }
+
+    .footer_nav{
+        display: none;
+    }
+
+    .copy_contenedor{
+        display: flex;
+        flex-wrap: wrap;
+        flex: 1;
+        justify-content: center;
+    }
+
+    
+}
+
+/*TABLETS*/
+@media only screen and (max-width:768px){
+
+    /*contenedor principal*/
+    .footer{
+        padding: 3rem 1rem;
+        padding-bottom: 1rem;
+        gap: 1rem;
+    }
+
+    .footer_redes{
+        gap: 0.7rem;
+    }
+
+    
+    .footer_redes p{
+        font-size: 1.3rem;
+    }
+
+    .copy{
+        margin: 0;
+        padding: 0.5rem;
+    }
+
+    .copy_contenedor{
+        flex-direction: column;
+    }
+}
+
+/*SMARTH PHONES*/
+@media only screen and (max-width:480px){
+
+    /*imagen logo*/
+    .footer_logo img{
+        width: 300px;
+        height: auto;
+    }
+
+    .footer_telefono div p{
+        font-size: 1rem;
+    }
+
+    .copy p{
+        font-size: 0.6rem;
+    }
+
+    .copy p a{
+        font-size: 0.7rem;
+    }
+}

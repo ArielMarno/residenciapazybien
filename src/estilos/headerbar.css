@@ -1,0 +1,97 @@
+/*contenedor principal*/
+.header_bar{
+    display: flex;
+    flex-direction: row;
+    min-height: 3rem;
+    background: var(--color-c);
+    align-items: center;
+    justify-content: space-between;
+    padding: 0rem 5rem;
+}
+
+/*telefono y email*/
+.header_bar-contacto{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 2rem;
+}
+
+.header_bar-contacto div{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+/*iconos*/
+.header_bar-contacto img{
+    width: 25px;
+    height: auto;
+}
+
+/*texto*/
+.header_bar-contacto p{
+    font-family: var(--font-text);
+    font-size: 1rem;    
+}
+
+/*redes sociales*/
+.header_bar-socials{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.header_bar-socials img{
+    width: 38px;
+    height: auto;
+}
+
+
+/*diseño adaptable*/
+
+/*DESTOCKS*/
+@media only screen and (max-width:1440px){
+
+    .header_bar{
+        padding: 0 4rem;
+    }
+
+    /*iconos*/
+    .header_bar-contacto img{
+        width: 20px;
+        height: auto;
+    }
+
+    /*texto*/
+    .header_bar-contacto p{
+        font-size: 0.8rem;    
+    }
+
+    .header_bar-socials img{
+        width: 35px;
+        height: auto;
+    }
+}
+
+/*NOTEBOOKS*/
+@media only screen and (max-width:1023px){
+
+    .header_bar{
+        padding: 0 3rem;
+    }
+    .header_bar-socials img{
+        width: 33px;
+        height: auto;
+    }
+}
+
+/*TABLETS*/
+@media only screen and (max-width:768px){
+
+    .header_bar{
+        display: none;
+    }
+}

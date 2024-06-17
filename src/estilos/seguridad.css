@@ -1,0 +1,211 @@
+/*contenedor principal*/
+.seguridad{
+    min-height: 100svh;
+    background: #fff;
+    color: var(--color-n);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 3rem;
+    padding-bottom: 1rem;
+    gap: 1rem;
+}
+
+/*contenedor de imagen*/
+.seguridad aside{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-start;
+}
+
+/*imagen*/
+.seguridad aside div img{
+    width: 100%;
+    height: auto;
+}
+
+.carousel .carousel-status{
+    display: none;
+}
+
+.carousel .control-dots{
+    display: none;
+}
+
+
+.seguridad main{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-start;
+    gap: 1rem;
+}
+
+/*titulo*/
+.seguridad main h2{
+    width: 100%;
+    font-family: var(--font-family);
+    font-size: clamp(3rem, 0.4286rem + 2.8571vw, 4rem);
+    margin-top: 1rem;
+    color: var(--color-r);
+}
+
+
+/*contenedor de parrafos*/
+.seguridad .parrafos{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    gap: 0.5rem;
+}
+
+/*parrafos*/
+.seguridad .parrafos p{
+    font-family: var(--font-text);
+    font-size: clamp(1.2rem, 0.6857rem + 0.5714vw, 1.4rem);
+    max-width: 100%;
+    line-height: 35px;
+    margin: 0.5rem 0;
+}
+
+.seguridad .parrafos p span{
+    color: var(--color-r);
+    font-weight: 600;
+}
+
+.seguridad .parrafos ul{
+    margin: 1rem 0;
+    max-width: 90%;
+}
+
+.seguridad .parrafos ul li{
+    font-family: var(--font-text);
+    font-size: 1.3rem;
+    font-weight: 600;
+    padding: 0.5rem 0;
+    margin-left: 1rem;
+}
+
+
+/*diseño adaptable*/
+
+/*DESTOCKS*/
+@media only screen and (max-width:1440px){
+
+    /*contenedor principal*/
+    .seguridad{
+        padding: 3rem 4rem;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 1.5rem;
+    }
+
+    .seguridad aside{
+       align-items: center;
+       justify-content: center;
+    }
+
+    .seguridad main{
+        max-width: 80%;
+    }
+
+    .seguridad .carusel{
+        max-width: 80%;
+    }
+
+    /*titulo*/
+    .seguridad main h2{
+        font-size: 3.5rem;
+        margin-bottom: 1rem;
+    }
+
+    /*parrafos*/
+    .seguridad .parrafos p{
+        font-size: 1.5rem;
+        line-height: 30px
+    }
+
+    .seguridad .parrafos ul li{
+        font-size: 1.4rem;
+    }
+}
+
+/*NOTEBOOKS*/
+@media only screen and (max-width:1023px){
+
+    /*contenedor principal*/
+    .seguridad{
+        padding: 4rem 3rem;
+        gap: 2rem;
+    }
+
+    .seguridad .carusel{
+        max-width: 100%;
+    }
+
+    .seguridad main{
+        max-width: 100%;
+    }
+    
+    /*titulo*/
+    .seguridad main h2{
+        font-size: 2.7rem;
+        width: 100%;
+        text-align: left;
+        margin-bottom: 0.5rem;
+    }
+
+    /*parrafos*/
+    .seguridad .parrafos p{
+        font-size: 1.3rem;
+        max-width: 100%;
+    }
+
+    .seguridad .parrafos ul li{
+        font-size: 1.2rem;
+    }
+}
+
+/*TABLETS*/
+@media only screen and (max-width:768px){
+
+     /*contenedor principal*/
+     .seguridad{
+        padding: 3rem 1rem;
+        gap: 1.5rem;
+    }
+
+    /*titulo*/
+    .seguridad main h2{
+        font-size: 2.3rem;
+    }
+
+    /*parrafos*/
+    .seguridad .parrafos p{
+        font-size: 1.2rem;
+    }
+}
+
+@media only screen and (max-width:480px){
+    
+    /*contenedor principal*/
+    .seguridad{
+        gap: 1.5rem;
+    }
+
+    .seguridad main h2{
+        font-size: 2rem;
+    }
+
+    .seguridad .parrafos p{
+        font-size: 1.1rem;
+    }
+
+    .seguridad .parrafos ul li{
+        font-size: 1rem;
+    }
+}

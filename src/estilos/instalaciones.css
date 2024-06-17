@@ -1,0 +1,167 @@
+/*contenedor principal*/
+.instalaciones{
+    min-height: 100svh;
+    color: var(--color-n);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 5rem;
+    padding-bottom: 1rem;
+    gap: 3rem;
+    background-color: #d8e7ec;
+}
+
+/*contenedor de imagen*/
+.instalaciones aside{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-start;
+}
+
+.carousel .carousel-status{
+    display: none;
+}
+
+.carousel .control-dots{
+    display: none;
+}
+
+/*contenedor de contenido*/
+.instalaciones main{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 0.5rem;
+}
+
+/*titulo*/
+.instalaciones main h2{
+    font-family: var(--font-family);
+    font-size: clamp(3rem, 0.4286rem + 2.8571vw, 4rem);
+    margin: 0.5rem 0;
+    color: var(--color-r);
+}
+
+/*contenedor de parrafos*/
+.instalaciones .parrafos{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    gap: 1rem;
+}
+
+/*parrafos*/
+.instalaciones .parrafos p{
+    font-family: var(--font-text);
+    font-size: clamp(1.2rem, 0.6857rem + 0.5714vw, 1.4rem);
+    max-width: 100%;
+    line-height: 35px;
+}
+
+.instalaciones .parrafos p span{
+    font-weight: 600;
+    color: var(--color-r);
+}
+
+/*diseño adaptable*/
+
+/*DESTOCKS*/
+@media only screen and (max-width:1440px){
+
+    /*contenedor principal*/
+    .instalaciones{
+        padding: 3rem 4rem;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+        gap: 1.5rem;
+    }
+
+    .instalaciones aside{
+        align-items: center;
+        justify-content: center;
+    }
+
+    .instalaciones .carusel{
+        max-width: 80%;
+    }
+
+    .instalaciones main{
+        max-width: 80%;
+    }
+
+    /*titulo*/
+    .instalaciones main h2{
+        font-size: 3.5rem;
+        margin-bottom: 1rem;
+    }
+
+    /*parrafos*/
+    .instalaciones .parrafos p{
+        font-size: 1.5rem;
+        line-height: 30px
+    }
+}
+
+/*NOTEBOOKS*/
+@media only screen and (max-width:1023px){
+    /*contenedor principal*/
+    .instalaciones{
+        padding: 4rem 3rem;
+        gap: 2rem;
+    }
+
+    .instalaciones .carusel{
+        max-width: 100%;
+    }
+
+    .instalaciones main{
+        max-width: 100%;
+    }
+
+    /*titulo*/
+    .instalaciones main h2{
+        font-size: 2.7rem;
+        width: 100%;
+        text-align: left;
+        margin-bottom: 0.5rem;
+    }
+
+    /*parrafos*/
+    .instalaciones .parrafos p{
+        font-size: 1.3rem;
+        max-width: 100%;
+    }
+}
+
+/*TABLETS*/
+@media only screen and (max-width:768px){
+
+    /*contenedor principal*/
+    .instalaciones{
+        padding: 3rem 1rem;
+        gap: 1.5rem;
+    }
+
+    /*parrafos*/
+    .instalaciones .parrafos p{
+        font-size: 1.2rem;
+    }
+}
+
+@media only screen and (max-width:480px){
+
+    .instalaciones{
+        gap: 1.5rem;
+    }
+
+    /*parrafos*/
+    .instalaciones .parrafos p{
+        font-size: 1.1rem;
+    }
+
+}

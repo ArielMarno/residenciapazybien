@@ -1,0 +1,19 @@
+:root {
+  background: #000;
+  color: #fff;
+
+  /*VARIABLES PARA FUENTES*/
+  --font-title: "anth", sans-serif;
+  --font-text: "mestiza", sans-serif;
+
+  /*VARIABLES PARA COLORES*/
+  --color-n: #232323;
+  --color-c: #3199bc;
+  --color-r: #892121;
+}
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
