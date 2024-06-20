@@ -3,6 +3,13 @@ import tel from '../assets/icons/telefonoceleste.png';
 import mail from '../assets/icons/mailceleste.png';
 
 const Contacto = () => {
+
+  window.onbeforeunload = () => {
+    for(const form of document.getElementsByTagName('form')) {
+      form.reset();
+    }
+  }
+  
   return (
     <div className='contacto' id='contacto'>
       <div className='contacto_contenido'>
@@ -20,7 +27,7 @@ const Contacto = () => {
       </div>
 
       <div className='formulario'>
-        <form action="">
+        <form action="https://formspree.io/f/mblrrjeb" method="POST">
           <div>
             <label htmlFor="nombre">Nombre:</label>
             <input type="text" name="nombre" id="nombre" placeholder='Nombre' />
